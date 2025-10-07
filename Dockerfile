@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Runner - Create the final, optimized image
-FROM node:18-alpine AS runner
+FROM node:22-alpine AS runner
 WORKDIR /app
 
 # Create a non-root user for security best practices
