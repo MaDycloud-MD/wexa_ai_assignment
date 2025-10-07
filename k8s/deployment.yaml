@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nextjs-app-deployment
 spec:
-  replicas: 2 # As required
+  replicas: 1 
   selector:
     matchLabels:
       app: nextjs-app
@@ -14,16 +14,16 @@ spec:
     spec:
       containers:
         - name: nextjs-app
-          image: ghcr.io/[your-github-username]/[your-repo-name]:latest # IMPORTANT: Change this!
+          image: ghcr.io/https://github.com/MaDycloud-MD/WEXA_AI_Assignment.git:latest 
           ports:
             - containerPort: 3000
-          livenessProbe: # Health check
+          livenessProbe:
             httpGet:
               path: /
               port: 3000
             initialDelaySeconds: 15
             periodSeconds: 10
-          readinessProbe: # Health check
+          readinessProbe: 
             httpGet:
               path: /
               port: 3000
