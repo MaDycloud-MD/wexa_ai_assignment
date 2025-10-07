@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nextjs-app
-          image: ghcr.io/https://github.com/MaDycloud-MD/wexa_ai_assignment.git:latest 
+          image: ghcr.io/https://github.com/madycloud-md/wexa_ai_assignment.git:latest 
           ports:
             - containerPort: 3000
           livenessProbe:
