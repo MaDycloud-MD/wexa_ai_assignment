@@ -29,5 +29,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/github.com/madycloud-md/wexa_ai_assignment.git:latest
+            ghcr.io/github.com/madycloud-md/wexa_ai_assignment.git
